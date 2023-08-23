@@ -33,7 +33,6 @@ loadPokemonItens(offset, limit);
 
 loadMoreButton.addEventListener("click", () => {
   offset += limit;
-  debugger;
   const qtdrecordNextPage = offset + limit;
   if (qtdrecordNextPage >= maxRecords) {
     const newLimit = maxRecords - offset;
